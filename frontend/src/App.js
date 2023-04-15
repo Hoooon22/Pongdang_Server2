@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
+import { BrowserView, MobileView } from 'react-device-detect'
 
 function App() {
    const [hello, setHello] = useState('')
@@ -12,7 +13,13 @@ function App() {
 
     return (
         <div>
-            백엔드에서 가져온 데이터입니다 : {hello}
+            <BrowserView>
+                데스크톱 화면 입니다
+            </BrowserView>
+            <MobileView>
+                모바일 화면 입니다.
+            </MobileView>
+            백엔드에서 가져온 데이터입니다?! : {hello}
         </div>
     );
 }
