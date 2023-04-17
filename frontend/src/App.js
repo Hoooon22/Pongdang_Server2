@@ -2,6 +2,8 @@ import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import { BrowserView, MobileView } from 'react-device-detect'
 
+import { MainTop } from "./components";
+
 function App() {
    const [hello, setHello] = useState('')
 
@@ -13,6 +15,7 @@ function App() {
 
     return (
         <div>
+            <MainTop/>
             <BrowserView>
                 데스크톱 화면 입니다
             </BrowserView>
