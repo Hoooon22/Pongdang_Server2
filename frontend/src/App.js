@@ -2,6 +2,10 @@ import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import { BrowserView, MobileView } from 'react-device-detect'
 
+function MainTop() {
+
+}
+
 function App() {
    const [hello, setHello] = useState('')
 
