@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import { BrowserView, MobileView } from 'react-device-detect'
 
-import { MainTop } from "./components";
+import { MainTop } from "./components/Main";
 
 function App() {
    const [hello, setHello] = useState('')
