@@ -4,7 +4,7 @@ import "./MainTop.css";
 export default function MainTop() {
     return (
         <div className="topDiv">
-            <img className="topImage" src="/imgs/top_example.jpeg"/>
+            <img className="logo" src="/imgs/MainTop/1 맨-위의-로고.png"/>
         </div>
     );
 }
