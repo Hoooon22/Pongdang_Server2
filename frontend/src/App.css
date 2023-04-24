@@ -37,6 +37,11 @@
   }
 }
 
+.mainPage {
+    display: flex;
+    flex-direction: column;
+}
+
 .content {
     padding-top: 80px;
 }

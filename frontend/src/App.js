@@ -15,7 +15,7 @@ function App() {
     }, []);
 
     return (
-        <div>
+        <div className="mainPage">
             <MainTop/>
             <div className="content">
                 <BrowserView>
