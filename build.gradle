@@ -21,10 +21,6 @@ dependencies {
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 }
 
-tasks.named('test') {
-	useJUnitPlatform()
-}
-
 // react build
 def frontendDir = "$projectDir/frontend"
 
