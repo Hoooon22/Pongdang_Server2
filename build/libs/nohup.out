@@ -376,3 +376,172 @@ Consider the following:
 	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
 	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles prod are currently active).
 
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.4)
+
+2023-05-11 11:11:16.541  INFO 9119 --- [           main] c.P.PongdangServer2Application           : Starting PongdangServer2Application using Java 1.8.0_362 on ip-172-31-32-42.ap-northeast-2.compute.internal with PID 9119 (/usr/share/nginx/Pongdang_Server2/build/libs/Pongdang_Server2-0.0.1-SNAPSHOT.jar started by root in /usr/share/nginx/Pongdang_Server2/build/libs)
+2023-05-11 11:11:16.545  INFO 9119 --- [           main] c.P.PongdangServer2Application           : The following 1 profile is active: "prod"
+2023-05-11 11:11:18.683  INFO 9119 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-11 11:11:18.731  INFO 9119 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 0 JPA repository interfaces.
+2023-05-11 11:11:20.410  INFO 9119 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8001 (http)
+2023-05-11 11:11:20.448  INFO 9119 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-11 11:11:20.449  INFO 9119 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-05-11 11:11:20.621  INFO 9119 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-11 11:11:20.621  INFO 9119 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3926 ms
+2023-05-11 11:11:21.394  WARN 9119 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2023-05-11 11:11:21.402  INFO 9119 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-11 11:11:21.445  INFO 9119 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-05-11 11:11:21.504 ERROR 9119 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles prod are currently active).
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.4)
+
+2023-05-11 11:14:51.434  INFO 10709 --- [           main] c.P.PongdangServer2Application           : Starting PongdangServer2Application using Java 1.8.0_362 on ip-172-31-32-42.ap-northeast-2.compute.internal with PID 10709 (/usr/share/nginx/Pongdang_Server2/build/libs/Pongdang_Server2-0.0.1-SNAPSHOT.jar started by root in /usr/share/nginx/Pongdang_Server2/build/libs)
+2023-05-11 11:14:51.444  INFO 10709 --- [           main] c.P.PongdangServer2Application           : The following 1 profile is active: "prod"
+2023-05-11 11:14:53.369  INFO 10709 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-11 11:14:53.418  INFO 10709 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 0 JPA repository interfaces.
+2023-05-11 11:14:55.195  INFO 10709 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8001 (http)
+2023-05-11 11:14:55.226  INFO 10709 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-11 11:14:55.226  INFO 10709 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-05-11 11:14:55.383  INFO 10709 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-11 11:14:55.383  INFO 10709 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3807 ms
+2023-05-11 11:14:56.137  WARN 10709 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2023-05-11 11:14:56.146  INFO 10709 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-11 11:14:56.184  INFO 10709 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-05-11 11:14:56.242 ERROR 10709 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles prod are currently active).
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.4)
+
+2023-05-11 11:22:18.248  INFO 15172 --- [           main] c.P.PongdangServer2Application           : Starting PongdangServer2Application using Java 1.8.0_362 on ip-172-31-32-42.ap-northeast-2.compute.internal with PID 15172 (/usr/share/nginx/Pongdang_Server2/build/libs/Pongdang_Server2-0.0.1-SNAPSHOT.jar started by root in /usr/share/nginx/Pongdang_Server2/build/libs)
+2023-05-11 11:22:18.255  INFO 15172 --- [           main] c.P.PongdangServer2Application           : The following 1 profile is active: "prod"
+2023-05-11 11:22:20.280  INFO 15172 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-11 11:22:20.349  INFO 15172 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 0 JPA repository interfaces.
+2023-05-11 11:22:22.032  INFO 15172 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8001 (http)
+2023-05-11 11:22:22.076  INFO 15172 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-11 11:22:22.077  INFO 15172 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-05-11 11:22:22.249  INFO 15172 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-11 11:22:22.254  INFO 15172 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3859 ms
+2023-05-11 11:22:23.291  INFO 15172 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-11 11:22:24.432  INFO 15172 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-11 11:22:24.624  INFO 15172 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-11 11:22:24.922  INFO 15172 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2023-05-11 11:22:25.654  INFO 15172 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-05-11 11:22:26.053  INFO 15172 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-05-11 11:22:26.524  INFO 15172 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-11 11:22:26.555  INFO 15172 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-11 11:22:26.674  WARN 15172 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-11 11:22:27.206  INFO 15172 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-05-11 11:22:27.469  WARN 15172 --- [           main] o.s.b.a.m.MustacheAutoConfiguration      : Cannot find template location: classpath:/templates/ (please add some templates, check your Mustache configuration, or set spring.mustache.check-template-location=false)
+2023-05-11 11:22:27.670  WARN 15172 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8001 is already in use
+2023-05-11 11:22:27.672  INFO 15172 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-11 11:22:27.681  INFO 15172 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-11 11:22:27.694  INFO 15172 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-11 11:22:27.699  INFO 15172 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-11 11:22:27.734  INFO 15172 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-05-11 11:22:27.778 ERROR 15172 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8001 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8001 or configure this application to listen on another port.
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.4)
+
+2023-05-11 11:28:02.221  INFO 20775 --- [           main] c.P.PongdangServer2Application           : Starting PongdangServer2Application using Java 1.8.0_362 on ip-172-31-32-42.ap-northeast-2.compute.internal with PID 20775 (/usr/share/nginx/Pongdang_Server2/build/libs/Pongdang_Server2-0.0.1-SNAPSHOT.jar started by root in /usr/share/nginx/Pongdang_Server2/build/libs)
+2023-05-11 11:28:02.230  INFO 20775 --- [           main] c.P.PongdangServer2Application           : The following 1 profile is active: "prod"
+2023-05-11 11:28:03.902  INFO 20775 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-11 11:28:03.948  INFO 20775 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 JPA repository interfaces.
+2023-05-11 11:28:05.419  INFO 20775 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8001 (http)
+2023-05-11 11:28:05.450  INFO 20775 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-11 11:28:05.451  INFO 20775 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-05-11 11:28:05.596  INFO 20775 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-11 11:28:05.599  INFO 20775 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3236 ms
+2023-05-11 11:28:06.618  INFO 20775 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-11 11:28:07.447  INFO 20775 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-11 11:28:07.603  INFO 20775 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-11 11:28:07.854  INFO 20775 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2023-05-11 11:28:08.433  INFO 20775 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-05-11 11:28:08.779  INFO 20775 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-05-11 11:28:09.229  INFO 20775 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-11 11:28:09.255  INFO 20775 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-11 11:28:09.384  WARN 20775 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-11 11:28:09.798  INFO 20775 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-05-11 11:28:10.079  WARN 20775 --- [           main] o.s.b.a.m.MustacheAutoConfiguration      : Cannot find template location: classpath:/templates/ (please add some templates, check your Mustache configuration, or set spring.mustache.check-template-location=false)
+2023-05-11 11:28:10.316  INFO 20775 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8001 (http) with context path ''
+2023-05-11 11:28:10.416  INFO 20775 --- [           main] c.P.PongdangServer2Application           : Started PongdangServer2Application in 9.513 seconds (JVM running for 10.575)
+2023-05-11 11:39:07.880  INFO 20775 --- [nio-8001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-11 11:39:07.881  INFO 20775 --- [nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-11 11:39:07.884  INFO 20775 --- [nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
