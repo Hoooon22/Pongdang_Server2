@@ -11,7 +11,6 @@ export default function MainTop() {
                     <li>소개</li>
                     <li>인터뷰</li>
                     <li>기획</li>
-                    <li>유튜브</li>
                 </ul>
             </div>
         </div>
