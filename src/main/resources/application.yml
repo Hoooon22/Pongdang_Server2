@@ -10,3 +10,6 @@ server:
 spring:
   profiles:
     active: prod
+    resources:
+      cache:
+        period: 0
