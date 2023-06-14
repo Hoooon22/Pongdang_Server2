@@ -17,5 +17,3 @@ spring:
   devtools:
     livereload:
       enabled: 'true'
-  mustache:
-    check-template-location: false
