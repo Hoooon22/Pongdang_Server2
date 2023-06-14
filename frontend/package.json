@@ -16,10 +16,10 @@
   },
   "proxy": "http://localhost:8001",
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start start",
-    "build": "react-scripts --openssl-legacy-provider start build",
-    "test": "react-scripts --openssl-legacy-provider start test",
-    "eject": "react-scripts --openssl-legacy-provider start eject"
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
+    "test": "react-scripts --openssl-legacy-provider test",
+    "eject": "react-scripts --openssl-legacy-provider eject"
   },
   "eslintConfig": {
     "extends": [
