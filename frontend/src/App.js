@@ -19,7 +19,7 @@ function App() {
             <MainTop/>
             <div className="content">
                 <BrowserView>
-                    데스크톱 화면 입니다?
+                    데스크톱 화면 입니다!!!!!!!!!
                 </BrowserView>
                 <MobileView>
                     모바일 화면 입니다?
