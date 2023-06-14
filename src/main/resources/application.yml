@@ -10,9 +10,9 @@ server:
 spring:
   profiles:
     active: prod
-    resources:
-      cache:
-        period: 0
+  resources:
+    cache:
+      period: 0
   devtools:
     livereload:
       enabled: true
@@ -20,7 +20,3 @@ spring:
     cache: false
   thymeleaf:
     cache: false
-  jpa:
-    open-in-view: false
-  mustache:
-    check-template-location: false
