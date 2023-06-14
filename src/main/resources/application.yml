@@ -10,3 +10,10 @@ server:
 spring:
   profiles:
     active: prod
+  thymeleaf:
+    cache: 'false'
+  freemarker:
+    cache: 'false'
+  devtools:
+    livereload:
+      enabled: 'true'
