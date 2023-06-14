@@ -17,3 +17,6 @@ spring:
   devtools:
     livereload:
       enabled: 'true'
+  mustache:
+    prefix: classpath:/frontend/
+    check-template-location: true
