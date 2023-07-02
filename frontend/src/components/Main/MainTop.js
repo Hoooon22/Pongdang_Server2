@@ -11,7 +11,7 @@ export default function MainTop() {
                     <li>주제글</li>
                     <li>인터뷰</li>
                     <li>기획</li>
-                    <li>유튜브?</li>
+                    <li>유튜브</li>
                 </ul>
             </div>
         </div>
