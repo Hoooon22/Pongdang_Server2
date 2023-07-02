@@ -8,7 +8,7 @@ export default function MainTop() {
             <hr/>
             <div className="menu">
                 <ul>
-                    <li>소개</li>
+                    <li>주제글</li>
                     <li>인터뷰</li>
                     <li>기획</li>
                     <li>유튜브?</li>
