@@ -3,7 +3,7 @@ import axios from 'axios';
 import { BrowserView, MobileView } from 'react-device-detect'
 import "./App.css";
 
-import { MainTop } from "./components/Main";
+import { MainTop, Contents } from "./components/Main";
 
 function App() {
    const [hello, setHello] = useState('')
@@ -17,6 +17,7 @@ function App() {
     return (
         <div className="mainPage">
             <MainTop/>
+            <Contents/>
             <div className="content">
                 <BrowserView>
                     데스크톱 화면 입니다!!!!!!!!!
