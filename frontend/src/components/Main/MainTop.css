@@ -16,11 +16,19 @@ hr {
     height : 80%;
 }
 
-ul {
-    list-style-type: none;
+.menu {
+    width : 100%;
 }
 
-li {
-    padding: 0 0 0 0;
-    float: left;
+.menu ul {
+    width : 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-inline-start: 0;
+}
+
+.menu li {
+    text-align: center;
 }
