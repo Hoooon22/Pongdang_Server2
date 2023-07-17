@@ -4,7 +4,7 @@ import { BrowserView, MobileView } from 'react-device-detect'
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { MainTop, Contents } from "./components/Main";
+import { MainTop, Contents, Slider } from "./components/Main";
 
 function App() {
    const [hello, setHello] = useState('')
@@ -18,6 +18,7 @@ function App() {
     return (
         <div className="mainPage">
             <MainTop/>
+            <Slider/>
             <Contents/>
             <div className="content">
                 <BrowserView>

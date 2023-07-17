@@ -43,6 +43,10 @@
     align-items: center;
 }
 
+.mainPage > * {
+    margin: 5% 0%;
+}
+
 .content {
     padding-top: 80px;
 }
