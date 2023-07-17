@@ -1,3 +1,13 @@
-.title_img {
+.contents {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.contents > img {
+    width: 40%;
+}
+.contents .textbox {
     width: 40%;
 }
