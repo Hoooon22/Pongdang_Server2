@@ -4,7 +4,7 @@ import "./MainTop.css";
 export default function MainTop() {
     return (
         <div className="topDiv">
-            <img className="logo" src="/imgs/Main/MainTop/1_logo.png"/>
+            <img className="logo" src="/imgs/Main/MainImage_2/1_퐁당로고.png"/>
             <hr/>
             <div className="menu">
                 <ul>
