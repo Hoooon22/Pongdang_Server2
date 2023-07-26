@@ -3,7 +3,12 @@
   height: auto;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
+.carousel-indicators {
+    margin-bottom: 1%;
+}
+
+.carousel-indicators [data-bs-target] {
   width: 5%;
+  margin-right: 1%;
+  margin-left: 1%;
 }
