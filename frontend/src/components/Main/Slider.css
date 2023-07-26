@@ -13,7 +13,7 @@
   margin-left: 1%;
 }
 
-.carousel-control-prev-icon, carousel-control-next-icon {
+.carousel-control-prev-icon, .carousel-control-next-icon {
   opacity: 0; /* 투명하기 */
 }
 
