@@ -20,6 +20,7 @@ function App() {
             <MainTop/>
             <Slider/>
             <Contents/>
+            <img className="sectionLine" src="/imgs/Main/MainImage2/6_sectionLine.png" />
             <div className="content">
                 <BrowserView>
                     데스크톱 화면 입니다!!!!!!!!!
