@@ -1,0 +1,21 @@
+.contactDiv {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+.contactDiv > img {
+    width: 40%;
+    object-fit: contain;
+}
+
+.img1 {
+    object-position: left;
+    margin-left: 5%;
+}
+.img2 {
+    object-position: right;
+    margin-right: 5%;
+}

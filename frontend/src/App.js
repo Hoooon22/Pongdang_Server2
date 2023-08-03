@@ -4,7 +4,7 @@ import { BrowserView, MobileView } from 'react-device-detect'
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { MainTop, Contents, Slider } from "./components/Main";
+import { MainTop, Contents, Slider, ContactUs } from "./components/Main";
 
 function App() {
    const [hello, setHello] = useState('')
@@ -30,6 +30,7 @@ function App() {
                 </MobileView>
                 백엔드에서 가져온 데이터입니다?! : {hello}
             </div>
+            <ContactUs/>
         </div>
     );
 }
