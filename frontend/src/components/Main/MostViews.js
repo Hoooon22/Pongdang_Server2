@@ -27,7 +27,7 @@ export default function MostViews() {
 
   return (
     <div className="mostViews_div">
-      <div className="title" style={{ fontSize: `${textSize*2}vw` }}>
+      <div className="title" style={{ fontSize: `${textSize*1.7}vw` }}>
         <p>지금 많이 보는 글</p>
       </div>
 
