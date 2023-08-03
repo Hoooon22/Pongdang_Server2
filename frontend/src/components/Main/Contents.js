@@ -27,7 +27,7 @@ export default function Contents() {
 
   return (
     <div className="content_div">
-      <div className="tilte" style={{ fontSize: `${textSize*2}vw` }}>
+      <div className="title" style={{ fontSize: `${textSize*2}vw` }}>
         <p>이번 호의 주제글</p>
       </div>
 

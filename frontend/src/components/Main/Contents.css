@@ -5,14 +5,20 @@
     margin-top: 5%;
 }
 
-h2 {
-    text-align: center;
+.title > p {
+    background-image: url('../../../public/imgs/Main/MainImage2/13_highlight.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    font-weight: bold;
 }
 
 .subtitle {
     object-position: top;
     margin-top: 5%;
     margin-bottom: 5%;
+    font-weight: bold;
+    color: blue;
 }
 .details {
     object-position: bottom;
