@@ -9,7 +9,13 @@ h2 {
     text-align: center;
 }
 
-h3 {
+.subtitle {
+    object-position: top;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.details {
+    object-position: bottom;
 }
 
 .contents {
