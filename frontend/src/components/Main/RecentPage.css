@@ -27,9 +27,16 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
     width: 80%;
     margin-top: 5%;
+}
+
+.recent_contents > div > .date_div {
+    width: 10%;
+}
+
+.recent_contents > div > .date_div > img {
+    width: 100%;
 }
 
 .recent_contents > div > .number {
@@ -49,18 +56,15 @@
     width: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* 컨테이너를 위, 아래로 나눔 */
-    align-items: center; /* 수직 가운데 정렬 */
+    align-content: space-between;
 }
 
 .text_div > .title_p {
     width: 100%;
-    align-items: flex-start; /* 첫 번째 자식 요소를 컨테이너의 위쪽에 정렬 */
     font-weight: bold;
 }
 
 .text_div > .viewCount {
     width: 100%;
-    align-items: flex-end; /* 두 번째 자식 요소를 컨테이너의 아래쪽에 정렬 */
     color: blue;
 }

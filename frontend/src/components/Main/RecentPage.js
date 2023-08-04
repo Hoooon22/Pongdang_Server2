@@ -33,14 +33,19 @@ export default function RecentPage() {
 
       <div className="recent_contents">
         <div>
+            <div className="date_div">
+                <img src="/imgs/Main/MainImage2/8_date.png" />
+            </div>
             <div className="text_div">
                 <p className="title_p" style={{ fontSize: `${textSize*1.2}vw` }}> 열정으로 엮은 날개 옷, 안시연 </p>
                 <p className="viewCount" style={{ fontSize: `${textSize*0.9}vw` }}> view 514 </p>
             </div>
             <img className="title_img" src="/imgs/Main/2.png" />
-
         </div>
         <div>
+            <div className="date_div">
+                <img src="/imgs/Main/MainImage2/8_date.png" />
+            </div>
             <div className="text_div">
                 <p className="title_p" style={{ fontSize: `${textSize*1.2}vw` }}> 열정으로 엮은 날개 옷, 안시연 </p>
                 <p className="viewCount" style={{ fontSize: `${textSize*0.9}vw` }}> view 514 </p>
@@ -48,6 +53,9 @@ export default function RecentPage() {
             <img className="title_img" src="/imgs/Main/3.png" />
         </div>
         <div>
+            <div className="date_div">
+                <img src="/imgs/Main/MainImage2/8_date.png" />
+            </div>
             <div className="text_div">
                 <p className="title_p" style={{ fontSize: `${textSize*1.2}vw` }}> 열정으로 엮은 날개 옷, 안시연 </p>
                 <p className="viewCount" style={{ fontSize: `${textSize*0.9}vw` }}> view 514 </p>
