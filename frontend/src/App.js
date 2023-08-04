@@ -4,7 +4,7 @@ import { BrowserView, MobileView } from 'react-device-detect'
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { MainTop, Contents, Slider, ContactUs, MostViews } from "./components/Main";
+import { MainTop, Contents, Slider, ContactUs, MostViews, RecentPage } from "./components/Main";
 
 function App() {
    const [hello, setHello] = useState('')
@@ -22,6 +22,8 @@ function App() {
             <Contents/>
             <img className="sectionLine" src="/imgs/Main/MainImage2/6_sectionLine.png" />
             <MostViews/>
+            <img className="sectionLine" src="/imgs/Main/MainImage2/6_sectionLine.png" />
+            <RecentPage/>
             <img className="sectionLine" src="/imgs/Main/MainImage2/6_sectionLine.png" />
             <div className="content">
                 <BrowserView>
