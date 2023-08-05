@@ -1,6 +1,6 @@
 .mostViews_div {
     display: flex;
-    width: 100%;
+    width: 80%;
     flex-direction: column;
     align-items: center;
     margin-top: 5%;
@@ -31,12 +31,16 @@
 }
 
 .contents > div > .number {
+    margin: 0;
+    padding: 0;
     color: blue;
     font-weight: bold;
 }
 
 .contents > div > .line {
     width: 70%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .contents > div > .title_img {
@@ -45,13 +49,13 @@
 }
 
 .contents > div > .title_p {
-    width: 100%;
+    width: 95%;
     margin-top: 7%;
     font-weight: bold;
 }
 
 .contents > div > .viewCount {
-    width: 100%;
+    width: 95%;
     text-align: right;
     color: blue;
 }

@@ -27,31 +27,31 @@ export default function MostViews() {
 
   return (
     <div className="mostViews_div">
-      <div className="title" style={{ fontSize: `${textSize*1.7}vw` }}>
+      <div className="title" style={{ fontSize: `${textSize*1.5}vw` }}>
         <p>지금 많이 보는 글</p>
       </div>
 
       <div className="contents">
         <div>
-            <p className="number" style={{ fontSize: `${textSize*1.5}vw` }}> 1 </p>
+            <p className="number" style={{ fontSize: `${textSize*1.0}vw` }}> 1 </p>
             <img className="line" src="/imgs/Main/MainImage2/7_MostViewsLine.png" />
             <img className="title_img" src="/imgs/Main/2.png" />
-            <p className="title_p" style={{ fontSize: `${textSize*1.2}vw` }}> 열정으로 엮은 날개 옷, 안시연 </p>
-            <p className="viewCount" style={{ fontSize: `${textSize*0.9}vw` }}> view 514 </p>
+            <p className="title_p" style={{ fontSize: `${textSize*0.95}vw` }}> 열정으로 엮은 날개 옷, 안시연 </p>
+            <p className="viewCount" style={{ fontSize: `${textSize*0.7}vw` }}> view 514 </p>
         </div>
         <div>
-            <p className="number" style={{ fontSize: `${textSize*1.5}vw` }}> 2 </p>
+            <p className="number" style={{ fontSize: `${textSize*1.0}vw` }}> 2 </p>
             <img className="line" src="/imgs/Main/MainImage2/7_MostViewsLine.png" />
             <img className="title_img" src="/imgs/Main/3.png" />
-            <p className="title_p" style={{ fontSize: `${textSize*1.2}vw` }}> 열정으로 엮은 날개 옷, 안시연 </p>
-            <p className="viewCount" style={{ fontSize: `${textSize*0.9}vw` }}> view 514 </p>
+            <p className="title_p" style={{ fontSize: `${textSize*0.95}vw` }}> 열정으로 엮은 날개 옷, 안시연 </p>
+            <p className="viewCount" style={{ fontSize: `${textSize*0.7}vw` }}> view 514 </p>
         </div>
         <div>
-            <p className="number" style={{ fontSize: `${textSize*1.5}vw` }}> 3 </p>
+            <p className="number" style={{ fontSize: `${textSize*1.0}vw` }}> 3 </p>
             <img className="line" src="/imgs/Main/MainImage2/7_MostViewsLine.png" />
             <img className="title_img" src="/imgs/Main/4.png" />
-            <p className="title_p" style={{ fontSize: `${textSize*1.2}vw` }}> 열정으로 엮은 날개 옷, 안시연 </p>
-            <p className="viewCount" style={{ fontSize: `${textSize*0.9}vw` }}> view 514 </p>
+            <p className="title_p" style={{ fontSize: `${textSize*0.95}vw` }}> 열정으로 엮은 날개 옷, 안시연 </p>
+            <p className="viewCount" style={{ fontSize: `${textSize*0.7}vw` }}> view 514 </p>
         </div>
       </div>
     </div>

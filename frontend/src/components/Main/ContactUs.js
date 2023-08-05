@@ -21,9 +21,12 @@ export default function ContactUs() {
     }, []);
 
     return (
+    <>
+        <img className="contactTopLine" src="/imgs/Main/MainImage2/12_contactusLine.png"/>
         <div className="contactDiv">
             <img className="img1" src="/imgs/Main/MainImage2/10_bottomLogo.png" style={{maxHeight: windowSize.height * 0.1}} />
             <img className="img2" src="/imgs/Main/MainImage2/11_contactus.png" style={{maxHeight: windowSize.height * 0.1}} />
         </div>
+    </>
     );
 }

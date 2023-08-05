@@ -27,7 +27,7 @@ export default function RecentPage() {
 
   return (
     <div className="recentPage_div">
-      <div className="title" style={{ fontSize: `${textSize*1.7}vw` }}>
+      <div className="title" style={{ fontSize: `${textSize*1.5}vw` }}>
         <p>최근 업로드된 글</p>
       </div>
 
@@ -37,30 +37,30 @@ export default function RecentPage() {
                 <img src="/imgs/Main/MainImage2/8_date.png" />
             </div>
             <div className="text_div">
-                <p className="title_p" style={{ fontSize: `${textSize*1.2}vw` }}> 열정으로 엮은 날개 옷, 안시연 </p>
-                <p className="viewCount" style={{ fontSize: `${textSize*0.9}vw` }}> view 514 </p>
+                <p className="title_p" style={{ fontSize: `${textSize*0.95}vw` }}> 열정으로 엮은 날개 옷, 안시연 </p>
+                <p className="viewCount" style={{ fontSize: `${textSize*0.7}vw` }}> view 514 </p>
             </div>
-            <img className="title_img" src="/imgs/Main/2.png" />
+            <img className="title_img" src="/imgs/Main/5.png" />
         </div>
         <div>
             <div className="date_div">
                 <img src="/imgs/Main/MainImage2/8_date.png" />
             </div>
             <div className="text_div">
-                <p className="title_p" style={{ fontSize: `${textSize*1.2}vw` }}> 열정으로 엮은 날개 옷, 안시연 </p>
-                <p className="viewCount" style={{ fontSize: `${textSize*0.9}vw` }}> view 514 </p>
+                <p className="title_p" style={{ fontSize: `${textSize*0.95}vw` }}> 열정으로 엮은 날개 옷, 안시연 </p>
+                <p className="viewCount" style={{ fontSize: `${textSize*0.7}vw` }}> view 514 </p>
             </div>
-            <img className="title_img" src="/imgs/Main/3.png" />
+            <img className="title_img" src="/imgs/Main/6.png" />
         </div>
         <div>
             <div className="date_div">
                 <img src="/imgs/Main/MainImage2/8_date.png" />
             </div>
             <div className="text_div">
-                <p className="title_p" style={{ fontSize: `${textSize*1.2}vw` }}> 열정으로 엮은 날개 옷, 안시연 </p>
-                <p className="viewCount" style={{ fontSize: `${textSize*0.9}vw` }}> view 514 </p>
+                <p className="title_p" style={{ fontSize: `${textSize*0.95}vw` }}> 열정으로 엮은 날개 옷, 안시연 </p>
+                <p className="viewCount" style={{ fontSize: `${textSize*0.7}vw` }}> view 514 </p>
             </div>
-            <img className="title_img" src="/imgs/Main/4.png" />
+            <img className="title_img" src="/imgs/Main/7.png" />
         </div>
       </div>
     </div>
