@@ -1,0 +1,77 @@
+.upcoming_div {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.title > p {
+    background-image: url('../../../public/imgs/Main/MainImage2/13_highlight.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    font-weight: bold;
+}
+
+.upcoming_contents {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.upcoming_contents > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+    margin-top: 5%;
+}
+
+.upcoming_contents > div > .date_div {
+    width: 100%;
+}
+
+.upcoming_contents > div > .date_div > img {
+    width: 100%;
+}
+
+.upcoming_contents > div > .date_div > p {
+    font-weight: bold;
+}
+
+.upcoming_contents > div > .number {
+    color: blue;
+    font-weight: bold;
+}
+
+.upcoming_contents > div > .line {
+    width: 70%;
+}
+
+.upcoming_contents > div > .title_img {
+    width: 40%;
+}
+
+.contents {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contents > img {
+    width: 50%;
+    height: auto;
+}
+.contents .textbox {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
