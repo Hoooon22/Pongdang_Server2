@@ -4,6 +4,10 @@ import { BrowserView, MobileView } from 'react-device-detect'
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import { Main } from "./pages/Main";
+import { Test } from "./pages/Test";
+
+
 function App() {
 
     return (
