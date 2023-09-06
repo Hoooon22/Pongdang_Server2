@@ -13,7 +13,7 @@ function App() {
     return (
         <BrowserRouter>
             <div className="App">
-                <Route path="/" component={Main} />
+                <Route path="/" export component={Main} />
                 <Route path="/test" component={Test}/>
             </div>
         </BrowserRouter>
