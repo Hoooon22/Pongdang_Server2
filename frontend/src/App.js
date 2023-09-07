@@ -1,5 +1,4 @@
-import React, {useEffect, useState} from 'react';
-import axios from 'axios';
+import React from 'react';
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import { BrowserView, MobileView } from 'react-device-detect'
 import "./App.css";
@@ -13,7 +12,7 @@ function App() {
     return (
         <BrowserRouter>
             <div className="App">
-                <Route path="/" export component={Main} />
+                <Route path="/" exact component={Main} />
                 <Route path="/test" component={Test}/>
             </div>
         </BrowserRouter>
