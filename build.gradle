@@ -25,7 +25,7 @@ dependencies {
 }
 
 // react build
-def frontendDir = "$projectDir/src/main/frontend"
+def frontendDir = "$projectDir/frontend"
 
 sourceSets {
 	main {
