@@ -3,16 +3,13 @@ package com.Pongdang_Server2.controller;
 import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class WebController implements ErrorController {
-    @GetMapping({"/", "/error"})
-    public String index() {
-        return "forward:/test.html";
-    }
 
-    @GetMapping("/test")
-    public String test() {
-        return "forward:/test.html";
+    @RequestMapping({"/{path:[^\\.]*}"})
+    public String redirect() {
+        return "forward:/";
     }
 }
