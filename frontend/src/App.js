@@ -12,8 +12,8 @@ function App() {
     return (
         <BrowserRouter>
             <div className="App">
-                <Route path="/" exact component={Main} />
-                <Route path="/test" component={Test}/>
+                <Route path="/" exact component={Main}></Route>
+                <Route path="/test" component={Test}></Route>
             </div>
         </BrowserRouter>
     );
