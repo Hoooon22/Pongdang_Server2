@@ -13,7 +13,7 @@ function App() {
         <BrowserRouter>
             <div className="App">
                 <Route path="/" exact component={Main} />
-                <Route path="/test" component={Test}/>
+                <Route path="/test" component={Tests}/>
             </div>
         </BrowserRouter>
     );
