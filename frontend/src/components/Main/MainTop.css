@@ -10,10 +10,14 @@ hr {
     width: 60%;
 }
 
-.logo {
+.logo_a {
     width : 30%;
     height : auto;
     margin-top: 2%;
+}
+
+.logo_a img {
+    width : 100%;
 }
 
 .hr_image {
@@ -27,7 +31,11 @@ hr {
     justify-content: space-around;
 }
 
-.menu > img {
+.menu_a > img {
+    width : 100%;
+}
+
+.menu_a {
     width : 10%;
 }
 
