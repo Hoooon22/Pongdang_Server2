@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 1% 0%;
 }
 
 hr {
@@ -50,4 +51,8 @@ hr {
 
 .menu li {
     text-align: center;
+}
+
+.menu_a.interviews {
+    filter: invert(49%) sepia(56%) saturate(719%) hue-rotate(164deg) brightness(95%) contrast(90%);
 }
