@@ -7,6 +7,8 @@ export default function ContactUs() {
         height: window.innerHeight,
     });
 
+    const [isSpecialPage, setIsSpecialPage] = useState(false);
+
     const handleResize = () => {
         setWindowSize({
             width: window.innerWidth,
@@ -20,8 +22,14 @@ export default function ContactUs() {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
+    useEffect(() => {
+        if (window.location.pathname === '/interviews') {
+          setIsSpecialPage(true);
+        }
+      }, []);
+
     return (
-    <div className="ContactUs">
+    <div className={`ContactUs ${isSpecialPage ? 'special' : ''}`}>
         <img className="contactTopLine" src="/imgs/Main/MainImage2/12_contactusLine.png"/>
         <div className="contactDiv">
             <img className="img1" src="/imgs/Main/MainImage2/10_bottomLogo.png" style={{maxHeight: windowSize.height * 0.1}} />

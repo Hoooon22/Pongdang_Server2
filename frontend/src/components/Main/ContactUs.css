@@ -23,3 +23,9 @@
 .contactTopLine {
     width: 100%;
 }
+
+.ContactUs.special {
+  /* 특별한 스타일 */
+  position: fixed;
+  bottom: 0;
+}
