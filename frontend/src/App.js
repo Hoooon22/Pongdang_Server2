@@ -5,7 +5,7 @@ import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Main from "./pages/Main/Main";
-import Test from "./pages/Test/Test";
+import interviews from "./pages/interviews/interviews";
 
 function App() {
 
@@ -13,7 +13,7 @@ function App() {
         <BrowserRouter>
             <div className="App">
                 <Route path="/" exact component={Main}></Route>
-                <Route path="/test" component={Test}></Route>
+                <Route path="/interviews" component={interviews}></Route>
             </div>
         </BrowserRouter>
     );
