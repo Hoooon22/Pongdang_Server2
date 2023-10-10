@@ -1,3 +1,3 @@
-// import MainTop from "./MainTop";
+import SearchBar from "./SearchBar";
 
-// export {MainTop};
+export {SearchBar};
