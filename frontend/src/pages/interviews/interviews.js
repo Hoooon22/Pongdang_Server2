@@ -5,16 +5,17 @@ import "./interviews.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { MainTop, ContactUs } from "../../components/Main";
-import { SearchBar } from "../../components/interviews";
+import { SearchBar, Result } from "../../components/interviews";
 
 function interviews() {
 
     return (
         <div>
             <MainTop/>
-
-            <SearchBar/>
-
+            <div className="searchDiv">
+                <SearchBar/>
+                <Result/>
+            </div>
             <ContactUs/>
         </div>
     );
