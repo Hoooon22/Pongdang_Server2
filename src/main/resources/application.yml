@@ -19,11 +19,10 @@ spring:
       enabled: 'true'
 
     # spring data jpa 설정
-  data:
-    jpa:
-      properties:
-        hibernate:
-          dialect: org.hibernate.dialect.MySQL8Dialect
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
 
 logging:
   level:
