@@ -15,8 +15,8 @@ public class InterviewEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY) // auto_increment
     private Long id;
 
-    @Column(unique = true, name = "interviewTitle")
-    private String interviewTitle;
+    @Column(unique = true, name = "interview_title")
+    private String interview_title;
 
     @Column(name = "interviewee")
     private String interviewee;
@@ -24,8 +24,8 @@ public class InterviewEntity {
     @Column(name = "subtitle")
     private String subtitle;
 
-    public InterviewEntity(String interviewTitle, String interviewee, String subtitle) {
-        this.interviewTitle = interviewTitle;
+    public InterviewEntity(String interview_title, String interviewee, String subtitle) {
+        this.interview_title = interview_title;
         this.interviewee = interviewee;
         this.subtitle = subtitle;
     }
