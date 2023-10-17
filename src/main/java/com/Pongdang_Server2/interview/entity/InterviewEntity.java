@@ -15,13 +15,13 @@ public class InterviewEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY) // auto_increment
     private Long id;
 
-    @Column(unique = true)
+    @Column(unique = true, name = "interviewTitle")
     private String interviewTitle;
 
-    @Column
+    @Column(name = "interviewee")
     private String interviewee;
 
-    @Column
+    @Column(name = "subtitle")
     private String subtitle;
 
     public InterviewEntity(String interviewTitle, String interviewee, String subtitle) {
