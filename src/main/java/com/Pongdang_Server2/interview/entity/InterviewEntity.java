@@ -1,14 +1,14 @@
 package com.Pongdang_Server2.interview.entity;
 
-import com.Pongdang_Server2.interview.dto.InterviewDTO;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
+
 import javax.persistence.*;
 
-@Entity
-@Setter
 @Getter
-@Table(name = "interview")
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@Entity(name = "interview")
 public class InterviewEntity {
 
     @Id
@@ -24,13 +24,9 @@ public class InterviewEntity {
     @Column
     private String subtitle;
 
-    public static InterviewEntity toInterviewEntity(InterviewDTO interviewDTO) {
-        InterviewEntity interviewEntity = new InterviewEntity();
-        interviewEntity.setId(interviewDTO.getId());
-        interviewEntity.setInterviewTitle(interviewDTO.getInterviewTitle());
-        interviewEntity.setInterviewee(interviewDTO.getInterviewee());
-        interviewEntity.setSubtitle(interviewDTO.getSubtitle());
-
-        return interviewEntity;
+    public InterviewEntity(String interviewTitle, String interviewee, String subtitle) {
+        this.interviewTitle = interviewTitle;
+        this.interviewee = interviewee;
+        this.subtitle = subtitle;
     }
 }

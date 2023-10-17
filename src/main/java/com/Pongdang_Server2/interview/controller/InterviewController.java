@@ -1,16 +1,29 @@
 package com.Pongdang_Server2.interview.controller;
 
-import com.Pongdang_Server2.interview.service.InterviewService;
-
+import com.Pongdang_Server2.interview.entity.InterviewEntity;
+import com.Pongdang_Server2.interview.repository.InterviewRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
-@RequiredArgsConstructor // InterviewService에 대한 것들을 사용 가능
+import java.util.List;
+
+@RestController // Json 형태 결과값 반환
+@RequiredArgsConstructor // final 객체를 Constructor Injection (Autowired 역할)
+@RequestMapping("/v1") // version1의 api
 public class InterviewController {
 
-    // 생성자 주입
-    private final InterviewService interviewService;
+    private final InterviewRepository interviewRepository;
 
-    // 인터뷰
+    /**
+     * 조회
+     *
+     * @return
+     */
+    @GetMapping("interview")
+    public List<InterviewEntity> findAllInterview() {
+        return interviewRepository.findAll();
+    }
+
 }
