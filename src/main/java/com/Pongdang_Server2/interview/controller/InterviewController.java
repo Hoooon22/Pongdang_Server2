@@ -5,6 +5,7 @@ import com.Pongdang_Server2.interview.repository.InterviewRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -22,8 +23,10 @@ public class InterviewController {
      * @return
      */
     @GetMapping("interview")
-    public List<InterviewEntity> findAllInterview() {
-        return interviewRepository.findAll();
+    public List<InterviewEntity> findAllInterview(@RequestParam String keyword) {
+        // interviewRepository에서 keyword와 관련된 정보 조회 로직 작성
+        // 예: interviewRepository.findByTitleContaining(keyword);
+        return interviewRepository.findByInterviewTitleContaining(keyword);
     }
 
 }

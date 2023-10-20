@@ -5,7 +5,7 @@ import "./interviews.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { MainTop, ContactUs } from "../../components/Main";
-import { SearchBar, Result } from "../../components/interviews";
+import { Search } from "../../components/interviews";
 
 function interviews() {
 
@@ -13,8 +13,7 @@ function interviews() {
         <div>
             <MainTop/>
             <div className="searchDiv">
-                <SearchBar/>
-                <Result/>
+                <Search/>
             </div>
             <ContactUs/>
         </div>
