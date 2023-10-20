@@ -30,7 +30,7 @@ export default function Search() {
                 {/* interviews 배열에 맞게 데이터 렌더링 */}
                 {interviews.map(interview => (
                     <div key={interview.id}>
-                        <h3>{interview.interview_title}</h3>
+                        <h3>{interview.interviewTitle}</h3>
                         <p>{interview.interviewee}</p>
                     </div>
                 ))}
