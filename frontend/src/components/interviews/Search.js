@@ -31,6 +31,7 @@ export default function Search() {
                 {interviews.map(interview => (
                     <div key={interview.id}>
                         <h3>{interview.interview_title}</h3>
+                        <p>{interview.interviewee}</p>
                     </div>
                 ))}
             </div>
