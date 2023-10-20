@@ -8,5 +8,5 @@ import java.util.List;
 
 @Repository
 public interface InterviewRepository extends JpaRepository<InterviewEntity, Long> {
-    List<InterviewEntity> findByInterviewTitleContaining(String keyword);
+    List<InterviewEntity> findByInterview_titleContaining(String keyword);
 }

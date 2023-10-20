@@ -26,7 +26,7 @@ public class InterviewController {
     public List<InterviewEntity> findAllInterview(@RequestParam String keyword) {
         // interviewRepository에서 keyword와 관련된 정보 조회 로직 작성
         // 예: interviewRepository.findByTitleContaining(keyword);
-        return interviewRepository.findByInterviewTitleContaining(keyword);
+        return interviewRepository.findByInterview_titleContaining(keyword);
     }
 
 }
