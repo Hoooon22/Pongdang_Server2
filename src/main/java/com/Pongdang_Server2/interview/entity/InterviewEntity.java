@@ -15,7 +15,7 @@ public class InterviewEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY) // auto_increment
     private Long id;
 
-    @Column(unique = true, name = "interview_title")
+    @Column(unique = true, name = "interviewTitle")
     private String interviewTitle;
 
     @Column(name = "interviewee")
