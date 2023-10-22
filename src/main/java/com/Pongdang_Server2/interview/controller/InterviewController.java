@@ -24,7 +24,6 @@ public class InterviewController {
      */
     @GetMapping("interview")
     public List<InterviewEntity> findAllInterview(@RequestParam String keyword) {
-        return interviewRepository.findByInterviewTitleContainingOrIntervieweeContainingOrSubtitleContaining(keyword);
+        return interviewRepository.findByInterviewTitleContainingOrIntervieweeContainingOrSubtitleContaining(keyword, keyword, keyword);
     }
-
 }
