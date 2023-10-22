@@ -32,6 +32,7 @@ export default function Search() {
                     <div key={interview.id}>
                         <h3>{interview.interviewTitle}</h3>
                         <p>{interview.interviewee}</p>
+                        <p>{interview.subtitle}</p>
                     </div>
                 ))}
             </div>
