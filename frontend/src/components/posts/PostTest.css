@@ -1,0 +1,25 @@
+.postTest {
+    width: 60%;
+}
+
+.postTest > img {
+    width: 100%;
+}
+
+p {
+    white-space: pre-wrap;
+    margin-bottom: 0;
+}
+
+.title_post {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.title_post > div {
+    background-color: #2791E8;
+    margin-right: 2%;
+}

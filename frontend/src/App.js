@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Main from "./pages/Main/Main";
 import interviews from "./pages/interviews/interviews";
+import testPost from "./pages/posts/testPost/testPost";
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
             <div className="App">
                 <Route path="/" exact component={Main}></Route>
                 <Route path="/interviews" component={interviews}></Route>
+                <Route path="/posts/testPost" component={testPost}></Route>
             </div>
         </BrowserRouter>
     );
