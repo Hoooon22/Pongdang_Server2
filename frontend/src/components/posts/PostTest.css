@@ -1,6 +1,6 @@
 .postTest {
     width: 60%;
-}
+    overflow: auto; /* 내용이 넘치면 스크롤 생김 */}
 
 .postTest > img {
     width: 100%;
