@@ -11,4 +11,9 @@ public class WebController implements ErrorController {
     public String redirect() {
         return "forward:/";
     }
+
+    @RequestMapping({"/**/{path:^(?!.*\\.).*}"})
+    public String deepRedirect() {
+        return "forward:/";
+    }
 }
