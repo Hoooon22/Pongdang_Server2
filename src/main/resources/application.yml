@@ -30,7 +30,6 @@ spring:
 
 logging:
   level:
-    org.hibernate: info
     org.hibernate.SQL: ERROR
 
 spring.jpa.properties.hibernate.show_sql: true
