@@ -1,13 +1,36 @@
+.Search_Div {
+    margin-top: 10px;
+    width: 100%;
+}
+
 .SearchBar {
-    width: 80%;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
 .SearchBar > input {
-    display:block;
-    margin: 0 auto;
+    display: block;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #2791E8;
+    width: 40%;
+    height: 100%;
+}
+
+.SearchBar > button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 5%;
+}
+
+.SearchBar > button > img {
+    width: 100%;
+    /* border-bottom: 1px solid #2791E8; */
 }
 
 .Result_Search {
