@@ -33,6 +33,19 @@
     /* border-bottom: 1px solid #2791E8; */
 }
 
-.Result_Search {
+.Search_Result {
+    display: flex;
+    justify-content: center;
     margin-top: 5%;
+}
+
+.searchList {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+}
+
+.searchList > img {
+    width: 40%;
+    margin-right: 5%;
 }
