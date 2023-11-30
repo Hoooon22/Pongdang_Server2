@@ -1,6 +1,7 @@
 .Search_Div {
     margin-top: 10px;
-    width: 100%;
+    width: 90%;
+    height: 100%;
 }
 
 .SearchBar {
@@ -36,9 +37,10 @@
 .Search_Result {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin-top: 5%;
+    overflow-y: auto; /* 세로 스크롤 허용 */
+    height: 64vh;
 }
 
 .searchList {

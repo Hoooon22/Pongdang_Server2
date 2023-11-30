@@ -6,7 +6,6 @@
     align-items: center;
     margin-top: 1%;
     margin-bottom: 3%;
-    position: static;
 }
 
 .contactDiv > img {
@@ -32,6 +31,6 @@
 
 .ContactUs.special {
   /* 특별한 스타일 */
-  position: absolute;
-  bottom: 0%;
+    bottom: 0;
+    right: 0;
 }
