@@ -23,7 +23,7 @@ export default function ContactUs() {
     }, []);
 
     useEffect(() => {
-        if (window.location.pathname === '/interviews' || window.location.pathname.indexOf('/posts') === -1 ) {
+        if (window.location.pathname === '/interviews' || window.location.pathname.indexOf('/posts') != -1 ) {
           setIsSpecialPage(true);
         }
       }, []);
