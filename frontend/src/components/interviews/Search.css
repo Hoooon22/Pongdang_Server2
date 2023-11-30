@@ -35,7 +35,9 @@
 
 .Search_Result {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-top: 5%;
 }
 
@@ -43,6 +45,7 @@
     width: 60%;
     display: flex;
     flex-direction: row;
+    margin-bottom: 5%;
 }
 
 .searchList > img {

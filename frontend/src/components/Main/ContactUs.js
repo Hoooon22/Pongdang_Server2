@@ -23,7 +23,7 @@ export default function ContactUs() {
     }, []);
 
     useEffect(() => {
-        if (window.location.pathname === '/interviews' || window.location.pathname.indexOf('/posts') == -1 ) {
+        if (window.location.pathname === '/interviews' || window.location.pathname.indexOf('/posts') === -1 ) {
           setIsSpecialPage(true);
         }
       }, []);
@@ -31,9 +31,9 @@ export default function ContactUs() {
     return (
     <div className={`ContactUs ${isSpecialPage ? 'special' : ''}`}>
         <img className="contactTopLine" src="/imgs/Main/MainImage2/12_contactusLine.png"/>
-        <div className="contactDiv">
-            <img className="img1" src="/imgs/Main/MainImage2/10_bottomLogo.png" style={{maxHeight: windowSize.height * 0.1}} />
-            <img className="img2" src="/imgs/Main/MainImage2/11_contactus.png" style={{maxHeight: windowSize.height * 0.1}} />
+        <div className="contactDiv" style={{height: windowSize.height * 0.1}} >
+            <img className="img1" src="/imgs/Main/MainImage2/10_bottomLogo.png" style={{maxHeight: windowSize.height * 0.1, maxWidth: "100%"}} />
+            <img className="img2" src="/imgs/Main/MainImage2/11_contactus.png" style={{maxHeight: windowSize.height * 0.1, maxWidth: "100%"}} />
         </div>
     </div>
     );

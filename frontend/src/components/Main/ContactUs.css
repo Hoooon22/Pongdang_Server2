@@ -1,19 +1,20 @@
 .contactDiv {
-    width: 90%;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-top: 1%;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
+    position: static;
 }
 
 .contactDiv > img {
-    width: 40%;
     object-fit: contain;
     /* 상하좌우 정중앙 정렬하기 */
       top: 50%;
       left: 50%;
+    height: 80%;
 }
 
 .img1 {
