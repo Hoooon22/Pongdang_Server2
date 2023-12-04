@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useHistory } from 'react-router-dom';
 
 import "./Search.css";
 
@@ -7,6 +8,7 @@ export default function Search() {
     const [keyword, setKeyword] = useState("");
     const [textSize, setTextSize] = useState(2);
     const [imageHeight, setImageHeight] = useState(0);
+    const history = useHistory();
 
     const handleKeyDown = (e) => {
         if (e.key === "Enter") {
@@ -69,7 +71,12 @@ export default function Search() {
             <div className="Search_Result">
                 {/* interviews 배열에 맞게 데이터 렌더링 */}
                 {interviews.map(interview => (
-                    <div className="searchList" style={{ fontSize: `${textSize*0.6}vw`}} OnClick="location.href ='https://stoneinwell.com/posts/testPost'" >
+
+                    <div
+                        className="searchList"
+                        style={{ fontSize: `${textSize * 0.6}vw`}}
+                        onClick={() => history.push('https://stoneinwell.com/posts/testPost')}
+                    >
                     <img src="/imgs/interviews/리스트_썸네일.png" />
                         <div>
                             <p style={{ color: '#2791E8' }}>{interview.numRock}</p>
