@@ -33,7 +33,11 @@ export default function Search() {
             const handleImageLoad = () => {
                 setImageHeight(img.offsetHeight);
             };
-            img.addEventListener("load", handleImageLoad);
+            if (img.complete) {
+                handleImageLoad();
+            } else {
+                img.addEventListener("load", handleImageLoad);
+            }
             window.addEventListener("resize", handleImageLoad);
             return () => {
                 img.removeEventListener("load", handleImageLoad);
