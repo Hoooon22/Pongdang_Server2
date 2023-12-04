@@ -72,7 +72,7 @@ export default function Search() {
                     <div className="searchList" style={{ fontSize: `${textSize*0.8}vw`}}>
                     <img src="/imgs/interviews/리스트_썸네일.png" />
                         <div>
-                            <p style={{ color: '#2791E8'}}> {interview.num_rock} </p>
+                            <p style={{ color: '#2791E8'}}>{interview.numRock}</p>
                             <p style={{ fontSize: `${textSize*1.2}vw`, fontWeight: 'bold'}}>{interview.interviewTitle}</p>
                             <p>{interview.subtitle}</p>
                         </div>
