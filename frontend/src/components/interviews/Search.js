@@ -76,21 +76,81 @@ export default function Search() {
                     </div>
                 ))}
 
-                <div className="searchList" style={{ fontSize: `${textSize*1.0}vw`}}>
-                    <img src="/imgs/Main/1_1.png" />
+                <div className="searchList" style={{ fontSize: `${textSize*0.8}vw`}}>
+                    <img src="/imgs/interviews/리스트_썸네일.png" />
                     <div>
                         <p style={{ fontSize: `${textSize*1.5}vw`, fontWeight: 'bold'}}>제목</p>
                         <p>인터뷰이</p>
                         <p>안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요.</p>
                     </div>
                 </div>
-                <div className="searchList" style={{ fontSize: `${textSize*1.0}vw`}}>
-                    <img src="/imgs/Main/1_1.png" />
+                <div className="searchList" style={{ fontSize: `${textSize*0.8}vw`}}>
+                    <img src="/imgs/interviews/리스트_썸네일.png" />
                     <div>
                         <p style={{ fontSize: `${textSize*1.5}vw`, fontWeight: 'bold'}}>제목</p>
                         <p>인터뷰이</p>
                         <p>안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요.</p>
                     </div>
+                </div>
+                <div className="searchList" style={{ fontSize: `${textSize*0.8}vw`}}>
+                    <img src="/imgs/interviews/리스트_썸네일.png" />
+                    <div>
+                        <p style={{ fontSize: `${textSize*1.5}vw`, fontWeight: 'bold'}}>제목</p>
+                        <p>인터뷰이</p>
+                        <p>안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요.</p>
+                    </div>
+                </div>
+                <div className="searchList" style={{ fontSize: `${textSize*0.8}vw`}}>
+                    <img src="/imgs/interviews/리스트_썸네일.png" />
+                    <div>
+                        <p style={{ fontSize: `${textSize*1.5}vw`, fontWeight: 'bold'}}>제목</p>
+                        <p>인터뷰이</p>
+                        <p>안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요.</p>
+                    </div>
+                </div>
+                <div className="searchList" style={{ fontSize: `${textSize*0.8}vw`}}>
+                    <img src="/imgs/interviews/리스트_썸네일.png" />
+                    <div>
+                        <p style={{ fontSize: `${textSize*1.5}vw`, fontWeight: 'bold'}}>제목</p>
+                        <p>인터뷰이</p>
+                        <p>안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요.</p>
+                    </div>
+                </div>
+                <div className="searchList" style={{ fontSize: `${textSize*0.8}vw`}}>
+                    <img src="/imgs/interviews/리스트_썸네일.png" />
+                    <div>
+                        <p style={{ fontSize: `${textSize*1.5}vw`, fontWeight: 'bold'}}>제목</p>
+                        <p>인터뷰이</p>
+                        <p>안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요.</p>
+                    </div>
+                </div>
+                <div className="searchList" style={{ fontSize: `${textSize*0.8}vw`}}>
+                    <img src="/imgs/interviews/리스트_썸네일.png" />
+                    <div>
+                        <p style={{ fontSize: `${textSize*1.5}vw`, fontWeight: 'bold'}}>제목</p>
+                        <p>인터뷰이</p>
+                        <p>안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요.</p>
+                    </div>
+                </div>
+                <div className="searchList" style={{ fontSize: `${textSize*0.8}vw`}}>
+                    <img src="/imgs/interviews/리스트_썸네일.png" />
+                    <div>
+                        <p style={{ fontSize: `${textSize*1.5}vw`, fontWeight: 'bold'}}>제목</p>
+                        <p>인터뷰이</p>
+                        <p>안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요.</p>
+                    </div>
+                </div>
+                <div className="searchList" style={{ fontSize: `${textSize*0.8}vw`}}>
+                    <img src="/imgs/interviews/리스트_썸네일.png" />
+                    <div>
+                        <p style={{ fontSize: `${textSize*1.5}vw`, fontWeight: 'bold'}}>제목</p>
+                        <p>인터뷰이</p>
+                        <p>안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요. 안녕하세요.</p>
+                    </div>
+                </div>
+
+                <div className="gradation_container">
+                    <img src="/imgs/interviews/리스트_그라데이션.png" />
                 </div>
             </div>
         </div>
