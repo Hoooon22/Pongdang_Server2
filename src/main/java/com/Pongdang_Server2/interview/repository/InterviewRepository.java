@@ -8,5 +8,5 @@ import java.util.List;
 
 @Repository
 public interface InterviewRepository extends JpaRepository<InterviewEntity, Long> {
-    List<InterviewEntity> findByInterviewTitleContainingOrIntervieweeContainingOrSubtitleContaining(String interviewTitle, String interviewee, String subtitle);
+    List<InterviewEntity> findByInterviewTitleContainingOrIntervieweeContainingOrSubtitleContainingOrNumRockContaining(String interviewTitle, String interviewee, String subtitle, String numRock);
 }

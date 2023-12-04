@@ -25,9 +25,9 @@ public class InterviewEntity {
     private String subtitle;
 
     @Column(name = "numRock")
-    private Integer numRock;
+    private String numRock;
 
-    public InterviewEntity(String interviewTitle, String interviewee, String subtitle, Integer numRock) {
+    public InterviewEntity(String interviewTitle, String interviewee, String subtitle, String numRock) {
         this.interviewTitle = interviewTitle;
         this.interviewee = interviewee;
         this.subtitle = subtitle;
