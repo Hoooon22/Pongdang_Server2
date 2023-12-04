@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { useHistory } from 'react-router-dom';
 
 import "./Search.css";
@@ -9,6 +9,7 @@ export default function Search() {
     const [textSize, setTextSize] = useState(2);
     const [imageHeight, setImageHeight] = useState(0);
     const history = useHistory();
+    const imgRef = useRef(null);
 
     const handleKeyDown = (e) => {
         if (e.key === "Enter") {
@@ -26,28 +27,19 @@ export default function Search() {
             .catch(error => console.error(error));
     };
 
-    const handleWindowResize = () => {
-        const img = document.getElementById("search_submit_button");
-        if (img) {
-            setImageHeight(img.offsetHeight);
-        }
-    };
-
     useEffect(() => {
-        const img = document.getElementById("search_submit_button");
+        const img = imgRef.current;
         if (img) {
-            img.onload = () => {
+            const handleImageLoad = () => {
                 setImageHeight(img.offsetHeight);
             };
-            window.addEventListener("resize", handleWindowResize);
+            img.addEventListener("load", handleImageLoad);
+            window.addEventListener("resize", handleImageLoad);
+            return () => {
+                img.removeEventListener("load", handleImageLoad);
+                window.removeEventListener("resize", handleImageLoad);
+            };
         }
-
-        return () => {
-            if (img) {
-                img.onload = null;
-            }
-            window.removeEventListener("resize", handleWindowResize);
-        };
     }, []);
 
     return (
@@ -62,7 +54,7 @@ export default function Search() {
                     style={{ fontSize: `${textSize * 1.1}vw`, height: imageHeight }}
                 />
                 <button onClick={handleButtonClick}>
-                    <img id="search_submit_button" src="/imgs/interviews/리스트_돋보기.png" />
+                    <img ref={imgRef} src="/imgs/interviews/리스트_돋보기.png" alt="검색 버튼" />
                 </button>
             </div>
             <div className="Search_Result">
@@ -72,7 +64,7 @@ export default function Search() {
                         style={{ fontSize: `${textSize * 0.6}vw`, cursor: 'pointer' }}
                         onClick={() => history.push(interview.link)}
                     >
-                        <img src="/imgs/interviews/리스트_썸네일.png" />
+                        <img src="/imgs/interviews/리스트_썸네일.png" alt="리스트 썸네일" />
                         <div>
                             <p style={{ color: '#2791E8' }}>{interview.numRock}</p>
                             <p style={{ fontSize: `${textSize * 1.0}vw`, fontWeight: 'bold' }}>{interview.interviewTitle}</p>
@@ -82,7 +74,7 @@ export default function Search() {
                 ))}
 
                 <div className="gradation_container">
-                    <img src="/imgs/interviews/리스트_그라데이션.png" />
+                    <img src="/imgs/interviews/리스트_그라데이션.png" alt="그라데이션 이미지" />
                 </div>
             </div>
         </div>
