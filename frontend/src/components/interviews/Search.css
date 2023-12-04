@@ -94,4 +94,5 @@
     -moz-user-drag: none;
     -o-user-drag: none;
     user-drag: none;
+    pointer-events: none; /* 이미지 위에서의 이벤트 처리 막기 */
 }
