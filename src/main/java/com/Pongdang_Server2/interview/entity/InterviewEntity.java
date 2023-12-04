@@ -24,9 +24,13 @@ public class InterviewEntity {
     @Column(name = "subtitle")
     private String subtitle;
 
-    public InterviewEntity(String interviewTitle, String interviewee, String subtitle) {
+    @Column(name = "numRock")
+    private Integer numRock;
+
+    public InterviewEntity(String interviewTitle, String interviewee, String subtitle, Integer numRock) {
         this.interviewTitle = interviewTitle;
         this.interviewee = interviewee;
         this.subtitle = subtitle;
+        this.numRock = numRock;
     }
 }
