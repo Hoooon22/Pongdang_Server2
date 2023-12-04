@@ -69,11 +69,11 @@ export default function Search() {
             <div className="Search_Result">
                 {/* interviews 배열에 맞게 데이터 렌더링 */}
                 {interviews.map(interview => (
-                    <div className="searchList" style={{ fontSize: `${textSize*0.8}vw`}}>
+                    <div className="searchList" style={{ fontSize: `${textSize*0.6}vw`}}>
                     <img src="/imgs/interviews/리스트_썸네일.png" />
                         <div>
-                            <p style={{ color: '#2791E8'}}>{interview.numRock}</p>
-                            <p style={{ fontSize: `${textSize*1.2}vw`, fontWeight: 'bold'}}>{interview.interviewTitle}</p>
+                            <p style={{ color: '#2791E8' }}>{interview.numRock}</p>
+                            <p style={{ fontSize: `${textSize*1.0}vw`, fontWeight: 'bold'}}>{interview.interviewTitle}</p>
                             <p>{interview.subtitle}</p>
                         </div>
                     </div>
