@@ -75,7 +75,7 @@ export default function Search() {
                     <div
                         className="searchList"
                         style={{ fontSize: `${textSize * 0.6}vw`, cursor: 'pointer'}}
-                        onClick={() => history.push('posts/testPost')}
+                        onClick={() => history.push(interview.link)}
                     >
                     <img src="/imgs/interviews/리스트_썸네일.png" />
                         <div>

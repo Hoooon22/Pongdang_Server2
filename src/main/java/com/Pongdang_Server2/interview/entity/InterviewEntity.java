@@ -27,10 +27,14 @@ public class InterviewEntity {
     @Column(name = "numRock")
     private String numRock;
 
-    public InterviewEntity(String interviewTitle, String interviewee, String subtitle, String numRock) {
+    @Column(name = "link")
+    private String link;
+
+    public InterviewEntity(String interviewTitle, String interviewee, String subtitle, String numRock, String link) {
         this.interviewTitle = interviewTitle;
         this.interviewee = interviewee;
         this.subtitle = subtitle;
         this.numRock = numRock;
+        this.link = link;
     }
 }
