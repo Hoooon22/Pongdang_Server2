@@ -28,6 +28,10 @@ export default function Search() {
     };
 
     useEffect(() => {
+        handleButtonClick();
+    }, []);
+
+    useEffect(() => {
         const img = imgRef.current;
         if (img) {
             const handleImageLoad = () => {
