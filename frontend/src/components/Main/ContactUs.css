@@ -30,7 +30,9 @@
 }
 
 .ContactUs.special {
-  /* 특별한 스타일 */
+    /* 특별한 스타일 */
+    position: fixed;
     bottom: 0;
     right: 0;
+    background-color: white;
 }

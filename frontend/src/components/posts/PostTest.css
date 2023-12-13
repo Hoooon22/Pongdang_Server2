@@ -1,6 +1,8 @@
 .postTest {
     width: 60%;
-    overflow: auto; /* 내용이 넘치면 스크롤 생김 */}
+    overflow: auto; /* 내용이 넘치면 스크롤 생김 */
+    margin-bottom: 20%;
+}
 
 .postTest > img {
     width: 100%;
@@ -22,4 +24,8 @@ p {
 .title_post > div {
     background-color: #2791E8;
     margin-right: 2%;
+}
+
+.body_post {
+    overflow-y: auto; /* 세로 스크롤 허용 */
 }
