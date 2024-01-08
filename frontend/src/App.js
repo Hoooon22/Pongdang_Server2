@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import ReactGA from 'react-ga';
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+import { TransitionGroup, Transition } from 'react-transition-group';
 import { BrowserView, MobileView } from 'react-device-detect'
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -19,9 +20,22 @@ function App() {
     return (
         <BrowserRouter>
             <div className="App">
-                <Route path="/" exact component={Main}></Route>
-                <Route path="/interviews" component={interviews}></Route>
-                <Route path="/posts/testPost" component={testPost}></Route>
+                <TransitionGroup>
+                    <Transition
+                        key={location.key}
+                        timeout={150}
+                    >
+                        {(status) => (
+                            <div className={`page ${status}`}>
+                                <Switch location={location}>
+                                    <Route path="/" exact component={Main}></Route>
+                                    <Route path="/interviews" component={interviews}></Route>
+                                    <Route path="/posts/testPost" component={testPost}></Route>
+                                </Switch>
+                            </div>
+                        )}
+                    </Transition>
+                </TransitionGroup>
             </div>
         </BrowserRouter>
     );
