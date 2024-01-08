@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import { BrowserView, MobileView } from 'react-device-detect'
 import "./App.css";
+import "./ga4.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Main from "./pages/Main/Main";
