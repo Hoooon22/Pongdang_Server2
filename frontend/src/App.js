@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import ReactGA from 'react-ga';
-import { BrowserRouter, Route, Switch, Link, useLocation } from "react-router-dom";
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import { BrowserView, MobileView } from 'react-device-detect'
+import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+import { BrowserView, MobileView } from 'react-device-detect';
+import { AnimatePresence } from 'framer-motion';
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -20,29 +20,15 @@ function App() {
     return (
         <BrowserRouter>
             <div className="App">
-                <RouteRender />
-            </div>
-        </BrowserRouter>
-    );
-}
-
-function RouteRender() {
-    const location = useLocation();
-
-    return (
-        <TransitionGroup>
-            <CSSTransition
-                key={location.key}
-                timeout={500}
-                classNames="fade"
-            >
-                <Switch location={location}>
+              <AnimatePresence>
+                <Switch>
                     <Route path="/" exact component={Main}></Route>
                     <Route path="/interviews" component={interviews}></Route>
                     <Route path="/posts/testPost" component={testPost}></Route>
                 </Switch>
-            </CSSTransition>
-        </TransitionGroup>
+              </AnimatePresence>
+            </div>
+        </BrowserRouter>
     );
 }
 
