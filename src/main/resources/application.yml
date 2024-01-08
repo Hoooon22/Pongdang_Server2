@@ -17,6 +17,9 @@ spring:
   devtools:
     livereload:
       enabled: 'true'
+  google:
+    analytics:
+      tracking-id: G-EE5Q5M4E8X
 
     # spring data jpa 설정
   jpa:
