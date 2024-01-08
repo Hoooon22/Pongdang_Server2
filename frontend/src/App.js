@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import ReactGA from 'react-ga';
-import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Link, useLocation } from "react-router-dom";
 import { TransitionGroup, Transition } from 'react-transition-group';
 import { BrowserView, MobileView } from 'react-device-detect'
 import "./App.css";
