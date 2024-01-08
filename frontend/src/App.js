@@ -20,24 +20,32 @@ function App() {
     return (
         <BrowserRouter>
             <div className="App">
-                <TransitionGroup>
-                    <Transition
-                        key={location.key}
-                        timeout={150}
-                    >
-                        {(status) => (
-                            <div className={`page ${status}`}>
-                                <Switch location={location}>
-                                    <Route path="/" exact component={Main}></Route>
-                                    <Route path="/interviews" component={interviews}></Route>
-                                    <Route path="/posts/testPost" component={testPost}></Route>
-                                </Switch>
-                            </div>
-                        )}
-                    </Transition>
-                </TransitionGroup>
+                <RouteRender />
             </div>
         </BrowserRouter>
+    );
+}
+
+function RouteRender() {
+    const location = useLocation();
+
+    return (
+        <TransitionGroup>
+            <Transition
+                key={location.key}
+                timeout={150}
+            >
+                {(status) => (
+                    <div className={`page ${status}`}>
+                        <Switch location={location}>
+                            <Route path="/" exact component={Main}></Route>
+                            <Route path="/interviews" component={interviews}></Route>
+                            <Route path="/posts/testPost" component={testPost}></Route>
+                        </Switch>
+                    </div>
+                )}
+            </Transition>
+        </TransitionGroup>
     );
 }
 
