@@ -3,7 +3,7 @@ import axios from 'axios';
 import { BrowserView, MobileView } from 'react-device-detect'
 import "./Main.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Wrapper from 'components/Wrapper';
+import Wrapper from '../../components/Wrapper';
 
 import { MainTop, Contents, Slider, ContactUs, MostViews, RecentPage, YoutubeBlock, Upcoming } from "../../components/Main";
 
