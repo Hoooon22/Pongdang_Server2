@@ -6,17 +6,20 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { MainTop, ContactUs } from "../../components/Main";
 import { Search } from "../../components/interviews";
+import Wrapper from '../../components/Wrapper';
 
 function interviews() {
 
     return (
-        <div>
-            <MainTop/>
-            <div className="searchDiv">
-                <Search/>
+        <Wrapper>
+            <div>
+                <MainTop/>
+                <div className="searchDiv">
+                    <Search/>
+                </div>
+                <ContactUs/>
             </div>
-            <ContactUs/>
-        </div>
+        </Wrapper>
     );
 }
 
