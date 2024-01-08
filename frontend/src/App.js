@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactGA from 'react-ga';
+import { ThemeProvider } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import { createBrowserHistory } from 'history'
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import { BrowserView, MobileView } from 'react-device-detect'
