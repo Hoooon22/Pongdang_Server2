@@ -31,20 +31,17 @@ function RouteRender() {
 
     return (
         <TransitionGroup>
-            <Transition
+            <CSSTransition
                 key={location.key}
-                timeout={150}
+                timeout={500}
+                classNames="fade"
             >
-                {(status) => (
-                    <div className={`page ${status}`}>
-                        <Switch location={location}>
-                            <Route path="/" exact component={Main}></Route>
-                            <Route path="/interviews" component={interviews}></Route>
-                            <Route path="/posts/testPost" component={testPost}></Route>
-                        </Switch>
-                    </div>
-                )}
-            </Transition>
+                <Switch location={location}>
+                    <Route path="/" exact component={Main}></Route>
+                    <Route path="/interviews" component={interviews}></Route>
+                    <Route path="/posts/testPost" component={testPost}></Route>
+                </Switch>
+            </CSSTransition>
         </TransitionGroup>
     );
 }
