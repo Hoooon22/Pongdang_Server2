@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { pageEffect } from './styles/animation';
+import { pageEffect } from '../styles/animation';
 
 const Wrapper = ({ children, ...rest }) => {
   return (
