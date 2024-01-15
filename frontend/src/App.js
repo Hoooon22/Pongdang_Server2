@@ -20,7 +20,7 @@ function App() {
     return (
         <BrowserRouter>
             <div className="App">
-              <AnimatePresence>
+              <AnimatePresence exitBeforeEnter>
                 <Switch>
                     <Route path="/" exact component={Main}></Route>
                     <Route path="/interviews" component={interviews}></Route>
